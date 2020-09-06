@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather4Today</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+</head>
+<body>
+ 	<nav>
+ 		<h1>Weather4Today</h1>
+ 	</nav>
+ 	<p class="note">*Press Enter to submit</p>
+ 	<main>
+ 		<form method="POST">
+ 			<div class="form-input">
+ 				<input type="text" name="city" id="city">
+ 				<label for="city">Enter city here:<span class="error-message"></span> </label>
+ 				<div class="input-slide"></div>
+ 			</div>
+ 		</form>
+ 		<div id="overlay">
+			<div id="wrapper">
+			</div>
+			<br>
+			<p>Please wait...</p>
+		</div>
+ 		<div class="container">
+ 			<div><img src="" alt="Weather Icon" class="weather-icon"></div><br>
+ 			<h2><span class="tempt">--</span><sup>o</sup>C</h2><br>
+ 			<h3 class="description">--</h3><br>
+ 			<table>
+ 				<thead>
+ 					<tr>
+	 					<th>Quantity</th>
+	 					<th>Values</th>
+ 					</tr>
+ 				</thead>
+ 				<tbody>
+ 					<tr>
+ 						<td>Location</td>
+ 						<td class="location">--</td>
+ 					</tr>
+ 					<tr class="grey">
+ 						<td>Longitude</td>
+ 						<td class="long">--</td>
+ 					</tr>
+ 					<tr>
+ 						<td>Latitude</td>
+ 						<td class="lat">--</td>
+ 					</tr>
+	 				<tr class="grey">
+	 					<td>Humidity</td>
+	 					<td class="humidity">--</td>
+	 				</tr>
+	 				<tr>
+	 					<td>Pressure</td>
+	 					<td class="pressure">--</td>
+	 				</tr>
+ 				</tbody>
+ 				
+ 			</table>
+ 		</div>
+ 	</main>
+
+ 	<script src="main.js"></script>
+</body>
+</html>
